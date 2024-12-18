@@ -39,7 +39,7 @@ void rotateAndPrintLayers(int** matrix, int size) {
 
         tranverseLapisTerluar(matrix, size, offset, tm);
         
-        printf("Lapisan ke-%d", offset + 1);
+        printf("Lapisan ke-%d\n", offset + 1);
         printf("Lapisan ukuran %d:\n", size - 2 * offset);
         for (int i = 0; i < banyakElemen; i++) {
             printf("%d ", tm[i]);
@@ -55,8 +55,8 @@ void rotateAndPrintLayers(int** matrix, int size) {
     }
 }
 
-int main() {
-    int size = 6;
+int main(void) {
+    int size = 10;
 
     int** matrix = malloc(size * sizeof(int*));
     for (int i = 0; i < size; i++) {
